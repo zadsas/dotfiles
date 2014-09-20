@@ -1,0 +1,9 @@
+[user]
+email = <email>
+name = Fran
+[core]
+editor = /usr/bin/vim
+[alias]
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+log-fancy  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+log-nice = log --graph --decorate --pretty=oneline --abbrev-commit
