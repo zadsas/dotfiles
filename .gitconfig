@@ -1,12 +1,12 @@
 [user]
-	email = francisco.blayagonzalvez@digital.hmrc.gov.uk
-name = Fran
+  email = francisco.blayagonzalvez@digital.hmrc.gov.uk
+  name = Fran
 [core]
-editor = /usr/local/bin/vim
+  editor = /usr/local/bin/vim
 [alias]
-lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-lgfancy  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-lgnice = log --graph --decorate --pretty=oneline --abbrev-commit
-lgline = log --graph --oneline --all
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lgfancy  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  lgnice = log --graph --decorate --pretty=oneline --abbrev-commit
+  lgline = log --graph --oneline --all
 [color]
-ui = true
+  ui = true
