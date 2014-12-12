@@ -6,8 +6,14 @@ filetype plugin indent on
 " don't bother with vi compatibility
 set nocompatible
 
+" nowrap by default
+set nowrap
+
 " enable syntax highlighting
 syntax on
+
+" vim buffer
+set viminfo='50,<1000,s100,h
 
 set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
@@ -32,7 +38,7 @@ set tabstop=2                                                " actual tabs occup
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
 set wildmode=longest,list,full
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ %{fugitive#statusline()}\ \ Line:\ %l
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ %{fugitive#statusline()}\ \ Line,Column:\ %l,%v
 
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a
@@ -48,7 +54,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <leader>l :Align
 map <leader>pp :setlocal paste!<cr>
-nmap <leader>a :Ack
+nmap <leader>a :Ack 
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
@@ -129,4 +135,4 @@ autocmd InsertEnter * highlight CursorLine cterm=bold  guifg=white guibg=blue ct
 
 " Revert Color to default when leaving Insert Mode
 " autocmd InsertLeave * highlight  CursorLine ctermfg=None
-autocmd InsertLeave * highlight CursorLine cterm=None guifg=white guibg=None ctermfg=white ctermbg=None
+autocmd InsertLeave * highlight CursorLine cterm=None guifg=white guibg=None ctermfg=white ctermbg=None 
