@@ -12,6 +12,9 @@ set nowrap
 " enable syntax highlighting
 syntax on
 
+" no visualbell - screen flashing
+set visualbell
+
 " vim buffer
 set viminfo='50,<1000,s100,h
 
