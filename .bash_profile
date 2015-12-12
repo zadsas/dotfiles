@@ -5,21 +5,40 @@ alias lt='ls -lrth'
 alias ssh="ssh -A -l franciscoblayagonzalvez"
 alias la='ls -la'
 alias ll='ls -la'
+alias g='grep -riI --colour'
+
+alias git=hub
 
 . ~/.git_prompt
 export PS1='\n$? [\W] \e[0;32m$(__git_ps1 " (%s)")\e[0m\n$ '
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export TECH=$HOME/Dropbox/technical-docs/
+export LANG=$HOME/Dropbox/LANGUAGES/
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+export WORKSPACE=/Users/a-mazesoft/projects
+
+# For brew to work
+export PATH=/usr/local/bin:$PATH
+
+[[ -f ~/.git-completion.bash ]] && . ~/.git-completion.bash
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:/Users/francisco/Downloads/ipcalc-0.41 # Add ipcalc
 PATH=$PATH:/Users/francisco/bin # Add conscript
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/git-overwritten
 
-export WORKSPACE=/Users/francisco/repos-dev/
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/"
-export PATH="$PATH:$JAVA_HOME/bin"
+#export PATH=$PATH:/Users/fbg/projects/GDS/pay-scripts/service-manager
+#export SM_CONFIG=$WORKSPACE/pay-scripts/service-manager/config.json
+#export AWS_ACCESS_KEY_ID=
+#export AWS_SECRET_ACCESS_KEY=
+#export AWS_DEFAULT_REGION=
+#eval `boot2docker shellinit 2>/dev/null`
+#eval "$(docker-machine env dev)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
