@@ -6,6 +6,10 @@ alias ssh="ssh -A -l franciscoblayagonzalvez"
 alias la='ls -la'
 alias ll='ls -la'
 alias g='grep -riI --colour'
+g_unique() {
+  g $1 /Users/fran/Dropbox/ | awk -F':' '{print $1}' | uniq
+}
+alias g_unique=g_unique
 
 alias git=hub
 
@@ -15,7 +19,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export TECH=$HOME/Dropbox/technical-docs/
-export LANG=$HOME/Dropbox/LANGUAGES/
+export LANGUAGES=$HOME/Dropbox/LANGUAGES/
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
