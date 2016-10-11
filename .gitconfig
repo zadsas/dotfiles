@@ -1,5 +1,5 @@
 [user]
-  email = <email>
+  email = fcoblaya@gmail.com
   name = Fran
 [core]
   editor = /usr/local/bin/vim
@@ -10,3 +10,5 @@
   lgline = log --graph --oneline --all
 [color]
   ui = true
+[credential]
+	helper = osxkeychain
