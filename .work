@@ -19,3 +19,5 @@ alias prod_rabbit_cluster_tunnel="ssh -f -L 15672:10.10.66.240:15672 prod-bastio
 
 alias prod_opscentre="ssh -f -L 8888:10.10.35.18:8888 prod-bastion -N ; open http://localhost:8888"
 
+alias ij='open -a /Applications/IntelliJ\ IDEA\ CE.app'
+
