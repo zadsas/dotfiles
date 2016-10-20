@@ -130,12 +130,13 @@ colorscheme distinguished
 set cursorline
 
 " Default Colors for CursorLine
-highlight CursorLine cterm=None guifg=white guibg=None ctermfg=white ctermbg=None
+highlight CursorLine cterm=NONE guifg=white guibg=NONE ctermfg=white ctermbg=NONE
 
 " Change Color when entering Insert Mode
 " autocmd InsertEnter * highlight  CursorLine ctermfg=Green
 autocmd InsertEnter * highlight CursorLine cterm=bold  guifg=white guibg=blue ctermfg=white ctermbg=blue
 
 " Revert Color to default when leaving Insert Mode
-" autocmd InsertLeave * highlight  CursorLine ctermfg=None
-autocmd InsertLeave * highlight CursorLine cterm=None guifg=white guibg=None ctermfg=white ctermbg=None 
+" autocmd InsertLeave * highlight  CursorLine ctermfg=NONE
+autocmd InsertLeave * highlight CursorLine cterm=NONE guifg=white guibg=NONE ctermfg=white ctermbg=NONE
+
