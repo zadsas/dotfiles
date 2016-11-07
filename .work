@@ -22,6 +22,9 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export WORKSPACE=$HOME/projects/BGCH
 
+export AWS_ACCESS_KEY_ID=XXX
+export AWS_SECRET_ACCESS_KEY=XXX
+
 # eval `boot2docker shellinit 2>/dev/null`
 # need 'default' machine to be running in virtual box
 # create ~/Library/LaunchAgents/com.docker.machine.default.plist
