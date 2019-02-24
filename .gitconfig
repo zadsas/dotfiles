@@ -10,6 +10,6 @@
   lgline = log --graph --oneline --all
 [color]
   ui = true
-[credential]
-  helper = osxkeychain
-
+#If using https authentication
+#[credential]
+#  helper = osxkeychain

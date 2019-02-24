@@ -1,4 +1,4 @@
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
-[[ -s "$HOME/.work" ]] && source "$HOME/.work"
+# iTerm2 launches a login shell and it only calls ~/.bash_profile
+# ~/.bashrc is only used if you call 'bash' in the prompt
 [[ -s "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
