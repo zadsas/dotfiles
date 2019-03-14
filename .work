@@ -23,6 +23,9 @@ export NODE_PATH=$NODE_PATH:`npm root -g`
 # RBENV
 eval "$(rbenv init -)"
 
+# PYENV
+eval "$(pyenv init -)"
+
 export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
 #export JFROG_PASSWORD=XXX
 #export AWS_ACCESS_KEY_ID=XXX
